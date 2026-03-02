@@ -1,0 +1,38 @@
+# === C++ ===
+# executáveis 
+*.exe
+*.out
+*.app
+
+# arquivos de Objeto e Bibliotecas
+*.o
+*.obj
+*.a
+*.la
+*.lo
+*.so
+*.dll
+*.dylib
+
+# pastas de build 
+build/
+.vscode/
+.vs/
+bin/
+obj/
+
+# === Python ===
+# Byte-compiled / arquivos de cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ambientes Virtuais
+venv/
+.venv/
+env/
+.env/
+
+# === sistema operacional ===
+.DS_Store
+Thumbs.db
