@@ -52,7 +52,4 @@ def copiar_lista_sem_replicados(lista_origem, lista_destino):
     """
     for i in lista_origem: # para cada elemento i contido na lista origem
         if i not in lista_destino: 
-            lista_destino.append(i) 
-
-
-
+            lista_destino.append(i)
