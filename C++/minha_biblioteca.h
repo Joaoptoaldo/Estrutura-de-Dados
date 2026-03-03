@@ -31,17 +31,20 @@ void popular_aleatorio(vector<int>& vetor, int quantidade) {
 
 void popular_de_arquivos(vector<string>& lista, string nome_arquivo) {
     // implementação para popular o vetor a partir de um arquivo
-    ifstream leitor(nome_arquivo);
 
+    ifstream procurador;
+    procurador.open(nome_arquivo); // abre o arquivo para leitura
     // verifica se o arquivo foi aberto 
-    if (!leitor.is_open()) {
-        cerr << "Erro ao abrir o arquivo: " << nome_arquivo << endl;
-        return;
+
+    if (!procurador){
+        cout << "Erro ao abrir o arquivo: " << nome_arquivo << endl;
+        return; // sai da função se o arquivo não puder ser aberto
     }
 
     string linha;
-    while (getline(leitor, linha)) {
-      if (!linha.empty()) {
+    while (!procurador.eof()) { // enquanto não chegar ao final do arquivo
+        getline(procurador, linha); // lê uma linha do arquivo
+        if (!linha.empty()) { // verifica se a linha não está vazia
             lista.push_back(linha); // adiciona a linha ao vetor
         }
     }
