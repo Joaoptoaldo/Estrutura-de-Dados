@@ -15,5 +15,10 @@ int main(){
     srand(time(0)); // inicializa a semente para números aleatórios
 
     popular_aleatorio(lista_numerosA, 10); // popular a lista A com 10 números aleatórios
-    exibir(lista_numerosA);
+    exibir(lista_numerosA);// exibe a lista 
+
+    nome_arquivo = "numeros.txt"; // nome do arquivo a ser lido
+    popular_de_arquivos(lista_numerosB, nome_arquivo); // popular a lista B a partir do arquivo
+
+    exibir(lista_numerosB); 
 }
