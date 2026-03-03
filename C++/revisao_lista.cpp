@@ -21,4 +21,9 @@ int main(){
     popular_de_arquivos(lista_numerosB, nome_arquivo); // popular a lista B a partir do arquivo
 
     exibir(lista_numerosB); 
+
+    copiar_lista_sem_republicados(lista_numerosB, lista_resultado); // copia os elementos da lista A para a lista resultado, sem repetições
+    exibir(lista_resultado); // exibe a lista resultado
+
+    return 1;
 }

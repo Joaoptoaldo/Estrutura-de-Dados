@@ -29,6 +29,13 @@ void popular_aleatorio(vector<int>& vetor, int quantidade) {
     }
 }
 
+
+/**
+ * @brief método para popular um vetor a partir de um arquivo
+ * 
+ * @param lista 
+ * @param nome_arquivo 
+ */
 void popular_de_arquivos(vector<string>& lista, string nome_arquivo) {
     // implementação para popular o vetor a partir de um arquivo
 
@@ -50,6 +57,12 @@ void popular_de_arquivos(vector<string>& lista, string nome_arquivo) {
     }
 }
 
+
+/**
+ * @brief método para exibir os elementos de um vetor
+ * 
+ * @param lista 
+ */
 void exibir(const vector<int>& lista){
     // percorre a lista exibindo cada elemento
     for (int i : lista){
