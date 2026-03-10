@@ -7,8 +7,22 @@ def calcular_media(lista):
     soma = 0
     for item in lista:
         soma += int(item["valor"])
-    
     return int(soma/len(lista))
+
+def calcular_mediana(lista):
+    if not lista: return 0
+    
+    # extrai os valores, converte para int e ordena
+    valores = sorted([int(item["valor"]) for item in lista])
+    
+    n = len(valores)
+    meio = n // 2
+    
+    if n % 2 != 0:
+        return valores[meio]
+    else:
+        return (valores[meio - 1] + valores[meio]) / 2
+    
 
 def esta_contido(dicionario, lista_dicionarios):
     for item in lista_dicionarios:
@@ -31,3 +45,4 @@ with open(nome_arquivo, 'r', encoding='utf8') as leitor:
 
 print('Quantidade de dados lidos: ', len(lista_dicionarios_glicemica))
 print('Media glicemica', calcular_media(lista_dicionarios_glicemica))
+print('Mediana glicemica:', calcular_mediana(lista_dicionarios_glicemica))

@@ -29,17 +29,13 @@ class Glicemia:
     
     @staticmethod
     def calcular_mediana(lista):
-        if not lista:
-            return 0
-            
-        # extrai os valores dos objetos e converte para int
-        valores = [int(item.valor) for item in lista]
-        valores.sort()
-        
-        n = len(valores)
-        meio = n // 2
-        
-        if n % 2 != 0:
-            return valores[meio]
-        else:
-            return (valores[meio - 1] + valores[meio]) / 2
+        tamanho = len(lista)
+        if tamanho % 2 != 0: #tamanho impar
+            posicao_meio = int(tamanho / 2)
+            return lista[posicao_meio].valor
+        else: #tamanho da lista eh par
+            posicao_meio = int(tamanho/2)
+            valor1 = int(lista[posicao_meio].valor)
+            valor2 = int(lista[posicao_meio-1].valor)
+            media = int((valor1 + valor2)/2)
+            return media
