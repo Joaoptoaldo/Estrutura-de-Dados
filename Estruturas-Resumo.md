@@ -125,7 +125,7 @@ Operações típicas:
 Complexidade média: **O(1)**
 
 ### Colisões
-
+ 
 Quando duas chaves caem na mesma posição, ocorre colisão.
 
 Estratégias comuns:
