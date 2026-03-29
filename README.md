@@ -4,4 +4,4 @@ Repositório voltado para a implementação de **Estrutura de Dados**, com foco 
 
 ## Material de apoio
 
-- [Resumo: Listas, Árvores e Hash](Estruturas-Resumo.md)
+- [Resumo - Estruturas de Dados](Estruturas-Resumo.md)

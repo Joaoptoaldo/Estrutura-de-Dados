@@ -1,4 +1,4 @@
-# Estruturas de Dados: Listas, Árvores e Hash
+# Estruturas de Dados - Resumo
 
 Este material resume seis estruturas fundamentais para estudo e prática de Estruturas de Dados:
 
